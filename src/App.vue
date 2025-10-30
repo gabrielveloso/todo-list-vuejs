@@ -17,6 +17,10 @@ const addTask = () => {
   }
 };
 
+const deleteTask = (id: number) => {
+  tasks.value = tasks.value.filter((task) => task.id !== id);
+};
+
 const tasksFiltered = computed(() => {
   if (filter.value === "all") {
     return tasks.value;
@@ -52,7 +56,7 @@ const tasksFiltered = computed(() => {
         Pending
       </button>
     </div>
-    <ListTasks :tasksFiltered="tasksFiltered" />
+    <ListTasks :tasksFiltered="tasksFiltered" @delete="deleteTask" />
   </div>
 </template>
 
