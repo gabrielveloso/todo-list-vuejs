@@ -43,7 +43,7 @@ const tasksFiltered = computed(() => {
 
     <br />
     <hr />
-    <div class="filter">
+    <div class="filter" v-if="tasks.length > 0">
       <button class="button outline" @click="filter = 'all'">All</button>
       <button class="button outline" @click="filter = 'completed'">
         Completed
