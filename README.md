@@ -6,6 +6,9 @@ This template should help get you started developing with Vue 3 in Vite.
 
 ![main todo task page](src/assets/tudo-list.png)
 
+## Video
+[screen-capture.webm](https://github.com/user-attachments/assets/ff7ff951-a130-463b-b352-57ea76d309ba)
+
 ## Vue features
 
 - Vue Composition API
